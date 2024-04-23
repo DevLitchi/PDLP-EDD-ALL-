@@ -1,7 +1,9 @@
+import java.util.Scanner;
 //Metodos estaticos del ejercicio 21
 public class MetodosComunes {
     public static void MENU() {
         // REPASO PARCIAL 2
+        
         System.out.println("BIENVENDIO AL SISTEMA DE ALUMNOS");
         System.out.println("1.- Leer archivo");
         System.out.println("2.- Alta alumno");
@@ -16,6 +18,12 @@ public class MetodosComunes {
         // Clean the screen
         System.out.println("\033[H\033[2J");
         System.out.flush();
+    }
+
+    public static void Pausa() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Presione enter para continuar");
+        sc.nextLine();
     }
 
 }

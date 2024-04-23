@@ -27,4 +27,14 @@ public class Validaciones {
         }
 
     }
+
+    public static boolean validarPromedio(double aux) {
+        if (aux >= 0 && aux <= 100) {
+            return true;
+        } else {
+            System.out.println("Ingresa un dato valido");
+            return false;
+        }
+
+    }
 }

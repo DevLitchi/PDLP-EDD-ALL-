@@ -29,7 +29,8 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return "Alumno [nombre=" + nombre + ", matricula=" + matricula + ", promedio=" + promedio + "]";
+        return "Alumno:" + nombre + "\nMatricula:" + matricula + "\nPromedio:" + promedio;
     }
 
+    
 }

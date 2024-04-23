@@ -12,7 +12,7 @@ public class VAlumnos {
             System.out.println("Ingrese el nombre del alumno");
             dato = sc.nextLine();
         } while (!Validaciones.validarNombre(dato));
-        return "";
+        return dato;
 
     }
 
@@ -24,7 +24,18 @@ public class VAlumnos {
             dato = sc.nextLine().trim();
         } while (!Validaciones.validarNumeros(dato));
 
-        return "";
+        return dato;
+
+    }
+
+    public static double leerPromedio() {
+        Scanner sc = new Scanner(System.in);
+        double dato;
+        do {
+            System.out.println("Ingrese el promedio del alumno");
+            dato = Double.parseDouble(sc.nextLine());
+        } while (!Validaciones.validarPromedio(dato));
+        return dato;
 
     }
 
