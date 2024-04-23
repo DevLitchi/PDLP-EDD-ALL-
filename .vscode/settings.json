@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Unidad 2/PARADIGMAS UNIDAD 2/Unidad 2/Json Settings/json-simple-1.1.1.jar"
+    ]
+}
