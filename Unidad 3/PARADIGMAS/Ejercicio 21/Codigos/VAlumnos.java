@@ -1,3 +1,4 @@
+package Codigos;
 
 //VA = Validacions de Alumnos
 //Metodos y validaciones orientadas solamente para la alta de alumnos y su manejo

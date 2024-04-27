@@ -1,3 +1,5 @@
+package Codigos;
+
 public class Alumno {
     String nombre;
     String matricula;
@@ -32,5 +34,4 @@ public class Alumno {
         return "Alumno:" + nombre + "\nMatricula:" + matricula + "\nPromedio:" + promedio;
     }
 
-    
 }

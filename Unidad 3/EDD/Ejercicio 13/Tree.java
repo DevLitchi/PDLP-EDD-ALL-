@@ -1,5 +1,8 @@
+
 //Arbol binari cada nodo tiene dos hijos como maximo | Basado en lista doble
 // Tree es el arbol binario
+import java.util.Scanner;
+
 public class Tree {
 
     Nodo Root; // Nodo raiz
@@ -63,6 +66,12 @@ public class Tree {
         }
     }
 
+    public static void Pausa() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Presione enter para continuar");
+        sc.nextLine();
+    }
+
     // IEA=Insertar Elementos Aleatorios
     public void EA(int qty) {
         for (int i = 0; i < qty; i++) {
@@ -114,13 +123,18 @@ public class Tree {
         }
     }
 
+    // TE = Tree Empty o Arbol vacio
+
     // Eliminar elemento especifico
     public void DE(int element) {
         Nodo aux = Root;
         Nodo ant = null;
         while (aux != null) {
             if (aux.getElement() == element) {
-                if (aux.left == null && aux.right == null) {
+                if (aux == Root) {
+                    Root = null;
+                    System.out.println("El elemento " + element + " ha sido eliminado");
+                } else if (aux.left == null && aux.right == null) {
                     if (ant.left == aux) {
                         ant.left = null;
                     } else {
@@ -161,6 +175,7 @@ public class Tree {
                 aux = aux.right;
             }
         }
+        System.out.println("El elemento " + element + " no ha sido encontrado");
     }
 
     // MT=Mostrar Arbol en Preorden
@@ -214,4 +229,7 @@ public class Tree {
             postordeninvertido(aux.left);
         }
     }
+
+    // ELiminar todos los nodos repetidos
+
 }
