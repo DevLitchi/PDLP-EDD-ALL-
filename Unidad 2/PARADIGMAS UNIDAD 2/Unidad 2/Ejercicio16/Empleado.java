@@ -1,3 +1,4 @@
+// Esta clase hereda de Persona y tiene un atributo de tipo Puesto sirve para asignar un puesto a un empleado
 public class Empleado extends Persona { // Herencia (agregacion o composicion?)
 
     // Atributos

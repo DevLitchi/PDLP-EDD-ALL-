@@ -1,3 +1,9 @@
+
+//Basilio Torres Dali Leonardo
+//Ejercicio 16
+//Este prgorama utiliza programacion orientada a objetos para llevar un control de empleados y puestos de trabajo
+//Se dan de alta empleados, se les asigna un puesto y se les da de baja o se muestran los empleados activos
+//La seleccion de puestos y salario es mediante un CSV previamente cargado
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
